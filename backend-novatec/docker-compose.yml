@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  api:
+    container_name: api-rest-v1
+    image: api-rest-v1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      app-network:
+    ports:
+      - "3004:3004"
+networks:
+  app-network:

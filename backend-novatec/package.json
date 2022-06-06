@@ -1,0 +1,42 @@
+{
+  "name": "backend-novatec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --collectCoverageFrom=main/**/*.{ts,js,jsx} --colors",
+    "start": "nodemon",
+    "dev-server": "nodemon --watch '**/*.ts' --exec ts-node ./main/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.1",
+    "babel-jest": "^26.6.1",
+    "body-parser": "^1.20.0",
+    "chai": "^4.3.4",
+    "express": "^4.17.2",
+    "jest": "^26.6.1",
+    "jest-html-reporters": "^2.1.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "sinon-chai": "^3.7.0",
+    "sinon-express-mock": "^2.2.1",
+    "ts-jest": "^26.4.3",
+    "ts-node": "^8.5.4",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/jest": "^26.0.15"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "main/**/*.{ts,js,jsx}"
+    ]
+  }
+}

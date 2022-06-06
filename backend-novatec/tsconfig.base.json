@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "allowJs": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+    }
+}
